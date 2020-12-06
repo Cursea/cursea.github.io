@@ -30,7 +30,6 @@ function App() {
 
         <Footer />
       </body>
-      <script src="brains.js"></script>
     </>
   )
 }
