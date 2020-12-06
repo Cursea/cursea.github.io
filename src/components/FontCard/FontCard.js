@@ -1,4 +1,5 @@
 import React from 'react'
+import './FontCard.css'
 
 const FontCard = () => {
   return (

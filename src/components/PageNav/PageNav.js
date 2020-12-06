@@ -1,4 +1,5 @@
 import React from 'react'
+import './PageNav.css'
 
 const PageNav = () => {
   return (
@@ -16,7 +17,7 @@ const PageNav = () => {
         name="custom-text"
         id="custom-text"
         placeholder="Type something"
-        onChange={this.updateValue()}
+        onChange={null}
       />
       <label for="font-sizes"></label>
       <select id="font-sizes">
