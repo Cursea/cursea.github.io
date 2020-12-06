@@ -1,0 +1,54 @@
+label {
+  display: none;
+}
+
+#major-nav {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  margin: auto 4rem;
+  border: 2px solid grey;
+  border-radius: 2rem;
+}
+
+#search,
+#custom-text {
+  width: 30%;
+}
+
+#font-sizes {
+  width: 7%;
+}
+
+#darkmode {
+  margin: 0 4% 0 1%;
+}
+
+#font-sizes,
+#list-mode,
+.darkmode-button,
+#reset {
+  cursor: pointer;
+}
+
+.darkmode-button {
+  padding: 8px;
+  border-color: gray;
+  border-radius: 50%;
+}
+
+#light {
+  background-color: whitesmoke;
+}
+
+#dark {
+  background-color: black;
+}
+
+#list-mode,
+#search,
+#custom-text,
+#font-sizes,
+#reset {
+  margin: auto;
+}

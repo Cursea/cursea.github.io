@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
-import FontCard from './components/FontCard'
-import Footer from './components/Footer'
-import HeaderNav from './components/HeaderNav'
-import PageNav from './components/PageNav'
+import FontCard from './components/FontCard/FontCard'
+import Footer from './components/Footer/Footer'
+import HeaderNav from './components/HeaderNav/HeaderNav'
+import PageNav from './components/PageNav/PageNav'
 
 function App() {
   const [customText, setCustomText] = useState([])
