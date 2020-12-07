@@ -5,31 +5,33 @@ import Footer from './components/Footer/Footer'
 import HeaderNav from './components/HeaderNav/HeaderNav'
 import PageNav from './components/PageNav/PageNav'
 
-function App() {
+const App = () => {
   const [customText, setCustomText] = useState([])
+
+  const handleCustomTextChange = (event) => {
+    setCustomText(event.target.value)
+  }
 
   return (
     <>
-      <body>
-        <HeaderNav />
+      <HeaderNav />
 
-        <main>
-          <PageNav />
+      <main>
+        <PageNav />
 
-          <div id="content">
-            <FontCard />
-            <FontCard />
-            <FontCard />
-            <FontCard />
-            <FontCard />
-            <FontCard />
-            <FontCard />
-            <FontCard />
-          </div>
-        </main>
+        <div id="content">
+          <FontCard />
+          <FontCard />
+          <FontCard />
+          <FontCard />
+          <FontCard />
+          <FontCard />
+          <FontCard />
+          <FontCard />
+        </div>
+      </main>
 
-        <Footer />
-      </body>
+      <Footer />
     </>
   )
 }

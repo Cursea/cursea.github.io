@@ -1,7 +1,7 @@
 import React from 'react'
 import './FontCard.css'
 
-const FontCard = () => {
+const FontCard = ({ font }) => {
   return (
     <div class="card">
       <h3 class="font-name">Roboto</h3>

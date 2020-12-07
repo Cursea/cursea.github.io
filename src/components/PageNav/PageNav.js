@@ -17,6 +17,7 @@ const PageNav = () => {
         name="custom-text"
         id="custom-text"
         placeholder="Type something"
+        value={null}
         onChange={null}
       />
       <label for="font-sizes"></label>
