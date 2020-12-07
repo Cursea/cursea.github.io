@@ -1,26 +1,26 @@
 import React from 'react'
 import './PageNav.css'
 
-const PageNav = () => {
+const PageNav = ({ customText, setCustomText }) => {
   return (
     <nav id="major-nav">
-      <label for="search">Search fonts</label>
+      <label htmlFor="search">Search fonts</label>
       <input
         type="search"
         name="search"
         id="search"
         placeholder="Search fonts"
       />
-      <label for="custom-text">Enter text</label>
+      <label htmlFor="custom-text">Enter text</label>
       <input
         type="text"
         name="custom-text"
         id="custom-text"
         placeholder="Type something"
-        value={null}
-        onChange={null}
+        value={customText}
+        onChange={setCustomText}
       />
-      <label for="font-sizes"></label>
+      <label htmlFor="font-sizes"></label>
       <select id="font-sizes">
         <option value="26px">26px</option>
         <option value="28px">28px</option>
@@ -28,11 +28,11 @@ const PageNav = () => {
         <option value="32px">32px</option>
       </select>
       <div id="darkmode">
-        <button class="darkmode-button" id="dark" type="button"></button>
-        <button class="darkmode-button" id="light" type="button"></button>
+        <button className="darkmode-button" id="dark" type="button"></button>
+        <button className="darkmode-button" id="light" type="button"></button>
       </div>
-      <button id="list-mode" class="fas fa-list" type="button"></button>
-      <button id="reset" class="fas fa-redo" type="button"></button>
+      <button id="list-mode" className="fas fa-list" type="button"></button>
+      <button id="reset" className="fas fa-redo" type="button"></button>
     </nav>
   )
 }

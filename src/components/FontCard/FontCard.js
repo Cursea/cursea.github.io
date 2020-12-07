@@ -3,11 +3,11 @@ import './FontCard.css'
 
 const FontCard = ({ font }) => {
   return (
-    <div class="card">
-      <h3 class="font-name">Roboto</h3>
-      <i class="fas fa-plus-circle"></i>
-      <h5 class="font-author">Christian Robertson</h5>
-      <p class="sample-text">Sample text</p>
+    <div className="card">
+      <h3 className="font-name">Roboto</h3>
+      <i className="fas fa-plus-circle"></i>
+      <h5 className="font-author">Christian Robertson</h5>
+      <p className="sample-text">Sample text</p>
     </div>
   )
 }
