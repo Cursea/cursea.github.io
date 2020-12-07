@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './App.css'
 import FontCard from './components/FontCard/FontCard'
 import Footer from './components/Footer/Footer'
@@ -12,9 +12,10 @@ const App = () => {
   const handleCustomTextChange = (event) => {
     setCustomText(event.target.value)
   }
-  useReducer(() => {
+
+  useEffect(() => {
     !customText ? setSampleText('Sample text') : setSampleText(customText)
-  }, [])
+  }, [customText])
 
   return (
     <>
@@ -28,13 +29,13 @@ const App = () => {
 
         <div id="content">
           <FontCard sampleText={sampleText} />
-          <FontCard />
-          <FontCard />
-          <FontCard />
-          <FontCard />
-          <FontCard />
-          <FontCard />
-          <FontCard />
+          <FontCard sampleText={sampleText} />
+          <FontCard sampleText={sampleText} />
+          <FontCard sampleText={sampleText} />
+          <FontCard sampleText={sampleText} />
+          <FontCard sampleText={sampleText} />
+          <FontCard sampleText={sampleText} />
+          <FontCard sampleText={sampleText} />
         </div>
       </main>
 
