@@ -1,6 +1,6 @@
 # Chingu Solo Project - Tier 2 - Favorite Fonts
 
-![Landing Page ScreenShot](./assets/favoriteFontsLanding.png)
+![Landing Page ScreenShot](./public/favoriteFontsLanding.png)
 
 ## Overview ##
 
@@ -14,17 +14,15 @@ As you add skills to your developer toolbag you'll be able to come back to this 
 
 Tier 2 realizes this project as a fully developed front-end app. A back-end is not necessary. If you would like to add a back-end, consider moving over to the Tier 3 repo.
 
-General instructions for all Pre-Work Projects can also be found in the Chingu Voyage Handbook (URL posted in the #read-me-first channel on Discord).
-
 **Requirements**
 
 *Structure*
-- [ ] Header with minor navigation *(Logo and Catalog/Featured/Articles/About link list)*
-- [ ] Nav with Major navigation / page-manipulation *(search, custom text, font-size, dark/light mode, grid/list mode, and reset)*
-- [ ] Main section for the font cards
-- [ ] Font cards which display the Font Name, the sample text, and an add button (the font creator is **not** available via the api, so it is not required in tiers 2 or 3)
+- [x] Header with minor navigation *(Logo and Catalog/Featured/Articles/About link list)*
+- [x] Nav with Major navigation / page-manipulation *(search, custom text, font-size, dark/light mode, grid/list mode, and reset)*
+- [x] Main section for the font cards
+- [x] Font cards which display the Font Name, the sample text, and an add button (the font creator is **not** available via the api, so it is not required in tiers 2 or 3)
 - [ ] Back-to-top button that allows users to click and scroll back up to the top *(there could be up to 959 fonts displayed, so you need this!)*
-- [ ] Footer section with your developer information
+- [x] Footer section with your developer information
 
 *Style*
 - [ ] Sample text in each card should be displayed in the corresponding font
@@ -32,8 +30,8 @@ General instructions for all Pre-Work Projects can also be found in the Chingu V
 - [ ] Implement a way to handle overflow from sample text in the font cards, as the font size is adjustable
 
 *Functionality*
-- [ ] Text typed into the custom text (type something) box should immediately change the sample text in each font card
-- [ ] The sample text should return to the default sample if the input box (type something) no longer has any input
+- [x] Text typed into the custom text (type something) box should immediately change the sample text in each font card
+- [x] The sample text should return to the default sample if the input box (type something) no longer has any input
 - [ ] Font size chooser should have at least four sizes and should immediately change the sample text font size in each font card
 - [ ] Implement the clickable 'reset' icon on the far right of the major navigation; it should reset the page as if the page were reloaded *(do not actually reset the page)*
 - [ ] On load, the page should display fonts sorted by current popularity, as returned by the Google Fonts Developer API *(see below)*
@@ -60,4 +58,4 @@ This project utilizes the [**Google Fonts API**](https://developers.google.com/f
 Please do *not* use the Google Web Font Loader for Tier 2.
 
 ## Example ##
-![Tier 2 Gif](./assets/tier2Preview.gif)
+![Tier 2 Gif](./public/tier2Preview.gif)

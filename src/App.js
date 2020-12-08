@@ -4,10 +4,12 @@ import FontCard from './components/FontCard/FontCard'
 import Footer from './components/Footer/Footer'
 import HeaderNav from './components/HeaderNav/HeaderNav'
 import PageNav from './components/PageNav/PageNav'
+import fontData from './fontData'
 
 const App = () => {
   const [customText, setCustomText] = useState('')
   const [sampleText, setSampleText] = useState('')
+  const [fonts, setFonts] = useState([])
 
   const handleCustomTextChange = (event) => {
     setCustomText(event.target.value)
@@ -16,6 +18,10 @@ const App = () => {
   useEffect(() => {
     !customText ? setSampleText('Sample text') : setSampleText(customText)
   }, [customText])
+
+  useEffect(() => {
+    setFonts(fontData)
+  }, [])
 
   return (
     <>
@@ -28,14 +34,7 @@ const App = () => {
         />
 
         <div id="content">
-          <FontCard sampleText={sampleText} />
-          <FontCard sampleText={sampleText} />
-          <FontCard sampleText={sampleText} />
-          <FontCard sampleText={sampleText} />
-          <FontCard sampleText={sampleText} />
-          <FontCard sampleText={sampleText} />
-          <FontCard sampleText={sampleText} />
-          <FontCard sampleText={sampleText} />
+          <FontCard sampleText={sampleText} fonts={fonts} />
         </div>
       </main>
 

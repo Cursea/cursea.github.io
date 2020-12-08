@@ -8,8 +8,8 @@ const Footer = () => {
   return (
     <footer>
       <p style={footerStyle}>
-        created by Marco Burman | 2020 |{' '}
-        <a href="https://github.com/Cursea">Portfolio project</a>
+        coded by Marco Burman | 2020 |{' '}
+        <a href="https://github.com/Cursea">portfolio project</a>
       </p>
     </footer>
   )
