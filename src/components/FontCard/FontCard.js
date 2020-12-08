@@ -8,7 +8,7 @@ const FontCard = ({ sampleText, fonts }) => {
         <h1 className="font-name">{font.name}</h1>
         <i className="fas fa-plus-circle"></i>
         <h2 className="font-author">{font.author}</h2>
-        <p className="sample-text" style={{ fontFamily: font.family }}>
+        <p className="sample-text" style={{ fontFamily: font.name }}>
           {sampleText}
         </p>
       </div>

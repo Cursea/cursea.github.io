@@ -29,6 +29,7 @@ Tier 2 realizes this project as a fully developed front-end app. A back-end is n
 - [ ] Buttons/links should be evident (make sure the cursor changes, etc.) 
 - [ ] Learn how to import font awesome icons into React!
 - [ ] Implement a way to handle overflow from sample text in the font cards, as the font size is adjustable
+- [ ] Make the whole page content a CSS Grid; make PageNav sticky (keep on top when page scrolls down) and make sure the footer is always at the bottom
 
 *Functionality*
 - [x] Text typed into the custom text (type something) box should immediately change the sample text in each font card
