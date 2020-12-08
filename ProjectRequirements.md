@@ -26,7 +26,8 @@ Tier 2 realizes this project as a fully developed front-end app. A back-end is n
 
 *Style*
 - [ ] Sample text in each card should be displayed in the corresponding font
-- [ ] Buttons/links should be evident (make sure the cursor changes, etc.)
+- [ ] Buttons/links should be evident (make sure the cursor changes, etc.) 
+- [ ] Learn how to import font awesome icons into React!
 - [ ] Implement a way to handle overflow from sample text in the font cards, as the font size is adjustable
 
 *Functionality*
