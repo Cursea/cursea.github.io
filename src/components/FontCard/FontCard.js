@@ -1,20 +1,27 @@
 import React from 'react'
 import './FontCard.css'
 
-const FontCard = ({ sampleText, fonts }) => {
-  const cardstoShow = () =>
-    fonts.map((font) => (
-      <div className="card" key={font.name}>
-        <h1 className="font-name">{font.name}</h1>
-        <i className="fas fa-plus-circle"></i>
-        <h2 className="font-author">{font.author}</h2>
-        <p className="sample-text" style={{ fontFamily: font.name }}>
-          {sampleText}
-        </p>
-      </div>
-    ))
+const FontCards = ({ filterText, sampleText, fonts }) => {
+  const filteredCards = fonts.filter(
+    (font) =>
+      font.name.toLocaleLowerCase().includes(filterText) ||
+      font.author.toLocaleLowerCase().includes(filterText)
+  )
 
-  return <>{cardstoShow()}</>
+  const cardsToShow = filterText ? filteredCards : fonts
+  console.log(`filterText: ${filterText}`)
+  console.log(`filteredCards: ${filteredCards}`)
+
+  return cardsToShow.map((card) => (
+    <div className="card" key={card.name}>
+      <h1 className="font-name">{card.name}</h1>
+      <i className="fas fa-plus-circle"></i>
+      <h2 className="font-author">{card.author}</h2>
+      <p className="sample-text" style={{ fontFamily: card.name }}>
+        {sampleText}
+      </p>
+    </div>
+  ))
 }
 
-export default FontCard
+export default FontCards

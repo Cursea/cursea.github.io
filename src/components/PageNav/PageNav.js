@@ -1,7 +1,7 @@
 import React from 'react'
 import './PageNav.css'
 
-const PageNav = ({ customText, setCustomText }) => {
+const PageNav = ({ filterText, setFilter, customText, setCustomText }) => {
   return (
     <nav id="major-nav">
       <label htmlFor="search">Search fonts</label>
@@ -10,6 +10,8 @@ const PageNav = ({ customText, setCustomText }) => {
         name="search"
         id="search"
         placeholder="Search fonts"
+        value={filterText}
+        onChange={setFilter}
       />
       <label htmlFor="custom-text">Enter text</label>
       <input
