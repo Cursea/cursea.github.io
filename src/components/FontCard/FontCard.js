@@ -15,7 +15,6 @@ const FontCards = ({ filterText, sampleText, fonts }) => {
   return cardsToShow.map((card) => (
     <div className="card" key={card.name}>
       <h1 className="font-name">{card.name}</h1>
-      <i className="fas fa-plus-circle"></i>
       <h2 className="font-author">{card.author}</h2>
       <p className="sample-text" style={{ fontFamily: card.name }}>
         {sampleText}

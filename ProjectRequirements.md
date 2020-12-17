@@ -27,7 +27,7 @@ Tier 2 realizes this project as a fully developed front-end app. A back-end is n
 *Style*
 - [ ] Sample text in each card should be displayed in the corresponding font
 - [ ] Buttons/links should be evident (make sure the cursor changes, etc.) 
-- [ ] Learn how to import font awesome icons into React!
+- [x] Learn how to import font awesome icons into React!
 - [ ] Implement a way to handle overflow from sample text in the font cards, as the font size is adjustable
 - [ ] Make the whole page content a CSS Grid; make PageNav sticky (keep on top when page scrolls down) and make sure the footer is always at the bottom
 
@@ -37,7 +37,7 @@ Tier 2 realizes this project as a fully developed front-end app. A back-end is n
 - [ ] Font size chooser should have at least four sizes and should immediately change the sample text font size in each font card
 - [ ] Implement the clickable 'reset' icon on the far right of the major navigation; it should reset the page as if the page were reloaded *(do not actually reset the page)*
 - [ ] On load, the page should display fonts sorted by current popularity, as returned by the Google Fonts Developer API *(see below)*
-- [ ] The search feature should be fully functional and should display matching fonts (it's up to you if you want to do this via a 'submit' or through onchange)
+- [x] The search feature should be fully functional and should display matching fonts (it's up to you if you want to do this via a 'submit' or through onchange)
 - [ ] When the search input is cleared (via reset button or manually), the fonts should automaticaly display sorted by poplarity again
 
 *Other*

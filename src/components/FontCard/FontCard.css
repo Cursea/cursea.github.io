@@ -22,11 +22,3 @@
 .sample-text {
   font-family: cursive;
 }
-
-.card > i {
-  justify-content: right;
-}
-
-i.fas {
-  color: red;
-}

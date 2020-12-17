@@ -1,4 +1,6 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faList, faRedo } from '@fortawesome/free-solid-svg-icons'
 import './PageNav.css'
 
 const PageNav = ({ filterText, setFilter, customText, setCustomText }) => {
@@ -33,8 +35,12 @@ const PageNav = ({ filterText, setFilter, customText, setCustomText }) => {
         <button className="darkmode-button" id="dark" type="button"></button>
         <button className="darkmode-button" id="light" type="button"></button>
       </div>
-      <button id="list-mode" className="fas fa-list" type="button"></button>
-      <button id="reset" className="fas fa-redo" type="button"></button>
+      <button id="list-mode" className="fas fa-list" type="button">
+        <FontAwesomeIcon icon={faList} />
+      </button>
+      <button id="reset" className="fas fa-redo" type="button">
+        <FontAwesomeIcon icon={faRedo} />
+      </button>
     </nav>
   )
 }
