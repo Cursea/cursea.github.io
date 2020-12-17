@@ -9,7 +9,6 @@ import fontData from './fontData'
 const App = () => {
   const [filterText, setFilterText] = useState('')
   const [customText, setCustomText] = useState('')
-  const [sampleText, setSampleText] = useState('')
   const [fonts, setFonts] = useState([])
 
   const handleFilterChange = (event) => {
@@ -19,10 +18,6 @@ const App = () => {
   const handleCustomTextChange = (event) => {
     setCustomText(event.target.value)
   }
-
-  useEffect(() => {
-    !customText ? setSampleText('Sample text') : setSampleText(customText)
-  }, [customText])
 
   useEffect(() => {
     setFonts(fontData)
@@ -43,7 +38,7 @@ const App = () => {
         <div id="content">
           <FontCards
             filterText={filterText}
-            sampleText={sampleText}
+            customText={customText}
             fonts={fonts}
           />
         </div>

@@ -20,5 +20,5 @@
 }
 
 .sample-text {
-  font-family: cursive;
+  white-space: pre-line;
 }
