@@ -4,7 +4,7 @@ import FontCards from './components/FontCard/FontCard'
 import Footer from './components/Footer/Footer'
 import HeaderNav from './components/HeaderNav/HeaderNav'
 import PageNav from './components/PageNav/PageNav'
-import fontData from './fontData'
+require('dotenv').config()
 
 const App = () => {
   const [filterText, setFilterText] = useState('')
@@ -20,7 +20,15 @@ const App = () => {
   }
 
   useEffect(() => {
-    setFonts(fontData)
+    const fetchData = async () => {
+      const response = await fetch(
+        `https://www.googleapis.com/webfonts/v1/webfonts?key=${process.env.REACT_APP_API_KEY}&sort=trending`
+      )
+
+      const json = await response.json()
+      return setFonts(json.items)
+    }
+    fetchData()
   }, [])
 
   return (
