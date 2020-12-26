@@ -1,24 +1,32 @@
 .card {
   display: grid;
+  grid-template-rows: 70px auto;
   padding: 0.5rem 0.2rem;
-  margin: 1.5rem 1rem;
-  border-top: 0.08rem solid whitesmoke;
+  margin: 1.5rem 1rem 0;
+  border: 1px solid #3b3f41;
+  border-radius: 8px;
+}
+
+.font-info {
+  margin: 8px 16px 24px;
 }
 
 .font-name {
   display: inline;
-  font-size: 0.9em;
-  margin-block-start: 0.25em;
-  margin-block-end: 0.5em;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
 }
 
 .font-author {
-  font-size: 0.8rem;
-  font-weight: 300;
-  margin-block-start: 0.25em;
-  margin-block-end: 0.5em;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  color: #a4a09b;
 }
 
 .sample-text {
   white-space: pre-line;
+  padding: 0 16px;
+  margin-bottom: 30px;
 }

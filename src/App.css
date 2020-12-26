@@ -1,8 +1,12 @@
 @import './assets/fonts.css';
 
 body {
-  background-color: rgb(37, 37, 37);
+  background-color: #191a1b;
   color: cornsilk;
+}
+
+main {
+  padding: 16px 60px 112px;
 }
 
 #content {
