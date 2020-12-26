@@ -1,1 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Gayathri|Chilanka|Open+Sans|Lato|Manjari|Montserrat|Roboto+Condensed');
+/* manually load selected fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto|Langar|Gayathri|Chilanka|Open+Sans|Lato|Manjari|Montserrat|Roboto+Condensed|Bungee+Outline');
+
+/* load all fonts (external website) */
+/* @import url('https://pagecdn.io/lib/easyfonts/fonts.css'); */
