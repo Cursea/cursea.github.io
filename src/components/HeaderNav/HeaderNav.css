@@ -1,6 +1,7 @@
 a {
   color: cornsilk;
   text-decoration: none;
+  font-family: bungee;
 }
 
 li {
@@ -13,7 +14,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  border-bottom: 2px solid grey;
+  border-bottom: 1px solid #3b3f41;
   margin-bottom: 1rem;
 }
 
@@ -28,4 +29,15 @@ li {
 #links > li {
   display: inline-block;
   margin: auto 15px;
+}
+
+#header-nav > div > h1 {
+  margin: 0;
+  font-family: bungee;
+}
+
+h1 > span {
+  font-family: charmonman;
+  font-weight: 200;
+  padding-right: 5px;
 }

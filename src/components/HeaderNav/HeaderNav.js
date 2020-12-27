@@ -5,7 +5,9 @@ const HeaderNav = () => {
   return (
     <header id="header-nav">
       <div>
-        <h1>Font of all Fonts</h1>
+        <h1>
+          Font <span>of all</span> Fonts
+        </h1>
       </div>
       <nav>
         <ul id="links">
