@@ -1,7 +1,15 @@
-# Font-of-all-fonts
+# Font of all Fonts
 
-'Font of all Fonts' is a portfolio project which aims to clone [Google Fonts](https://fonts.google.com/).
+'Font of all Fonts' is a portfolio project written in React with the aim of cloning [Google Fonts](https://fonts.google.com/).
 
-This is a React conversion of my _incomplete_ ['Favourite-Fonts'](https://github.com/Cursea/Favourite-Fonts) Chingu solo project, moving it from Tier 1 (HTML, CSS, vanilla JS) to Tier 2 (full frontend using a framework of my choice).
+This started out as a vanilla JS clone (['Favourite-Fonts'](https://github.com/Cursea/Favourite-Fonts)) before I chose to convert what I had to React, using create-react-app to kick it off.
 
 See [ProjectRequirements.md](ProjectRequirements.md) for progress.
+
+## To run locally
+
+1. Download [node.js](https://nodejs.org/en/)
+2. Clone this repo to your computer
+3. Navigate to the project directory in Node
+4. run `npm install`
+5. run `npm start`
