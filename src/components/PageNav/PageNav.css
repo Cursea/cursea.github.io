@@ -6,7 +6,7 @@ label {
   display: flex;
   justify-content: center;
   align-content: space-between;
-  margin: auto 20px 20px;
+  margin: auto 20px 40px;
   border: 2px solid grey;
   border-radius: 2rem;
 }

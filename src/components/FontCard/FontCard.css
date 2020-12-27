@@ -1,8 +1,6 @@
 .card {
   display: grid;
   grid-template-rows: 70px auto;
-  padding: 0.5rem 0.2rem;
-  margin: 1.5rem 1rem 0;
   border: 1px solid #3b3f41;
   border-radius: 8px;
 }
