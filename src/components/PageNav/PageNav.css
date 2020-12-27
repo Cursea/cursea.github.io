@@ -6,7 +6,10 @@ label {
   display: flex;
   justify-content: center;
   align-content: space-between;
-  margin: auto 20px 40px;
+  position: sticky;
+  top: 0;
+  margin: auto 0 40px;
+  background: #191a1b;
   border: 2px solid grey;
   border-radius: 2rem;
 }
