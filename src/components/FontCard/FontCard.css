@@ -1,12 +1,12 @@
 .card {
   display: grid;
-  grid-template-rows: 70px auto;
+  grid-template-rows: 56px auto;
   border: 1px solid #3b3f41;
   border-radius: 8px;
 }
 
 .font-info {
-  margin: 8px 16px 24px;
+  margin: 8px 16px 8px;
 }
 
 .font-name {
@@ -14,13 +14,6 @@
   font-size: 18px;
   font-weight: 400;
   margin: 0;
-}
-
-.font-author {
-  font-size: 14px;
-  font-weight: 400;
-  margin: 0;
-  color: #a4a09b;
 }
 
 .sample-text {

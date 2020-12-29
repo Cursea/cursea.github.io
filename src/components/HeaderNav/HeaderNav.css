@@ -1,7 +1,7 @@
 a {
   color: cornsilk;
   text-decoration: none;
-  font-family: bungee;
+  font-family: Bungee;
 }
 
 li {
@@ -33,11 +33,11 @@ li {
 
 #header-nav > div > h1 {
   margin: 0;
-  font-family: bungee;
+  font-family: Bungee;
 }
 
-h1 > span {
-  font-family: charmonman;
+#of-all {
+  font-family: Charmonman;
   font-weight: 200;
   padding-right: 5px;
 }

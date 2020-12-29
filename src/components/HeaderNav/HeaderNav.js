@@ -6,7 +6,7 @@ const HeaderNav = () => {
     <header id="header-nav">
       <div>
         <h1>
-          Font <span>of all</span> Fonts
+          Font <span id="of-all">of all</span> <span id="fonts">Fonts</span>
         </h1>
       </div>
       <nav>
