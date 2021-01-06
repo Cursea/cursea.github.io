@@ -1,12 +1,12 @@
 import React from 'react'
 import './FontCard.css'
 
-const FontCards = ({ filterText, customText, fonts }) => {
+const FontCards = ({ filterText, customText, fonts, numberOfFonts }) => {
   const filteredCards = fonts.filter((font) =>
     font.family.toLocaleLowerCase().includes(filterText)
   )
 
-  const cardsToShow = filterText ? filteredCards : fonts
+  const cardsToShow = filterText ? filteredCards : fonts.slice(0, numberOfFonts)
 
   return cardsToShow.map((card) => (
     <div className="card" key={card.family}>

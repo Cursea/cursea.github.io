@@ -10,14 +10,8 @@ const App = () => {
   const [filterText, setFilterText] = useState('')
   const [customText, setCustomText] = useState('')
   const [fonts, setFonts] = useState([])
-
-  const handleFilterChange = (event) => {
-    setFilterText(event.target.value)
-  }
-
-  const handleCustomTextChange = (event) => {
-    setCustomText(event.target.value)
-  }
+  const [atBottom, setAtBottom] = useState(false)
+  const [numberOfFonts, setNumberOfFonts] = useState(16)
 
   useEffect(() => {
     const fetchData = async () => {
@@ -30,6 +24,38 @@ const App = () => {
     }
     fetchData()
   }, [])
+
+  const handleFilterChange = (event) => {
+    setFilterText(event.target.value)
+  }
+
+  const handleCustomTextChange = (event) => {
+    setCustomText(event.target.value)
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  const handleScroll = () => {
+    if (
+      window.innerHeight + document.documentElement.scrollTop + 2 >=
+      document.documentElement.offsetHeight
+    ) {
+      setAtBottom(true)
+    }
+  }
+
+  useEffect(() => {
+    if (!atBottom) return
+    increaseNoOfFonts()
+  }, [atBottom])
+
+  const increaseNoOfFonts = () => {
+    setNumberOfFonts((prev) => prev + 12)
+    setAtBottom(false)
+  }
 
   return (
     <>
@@ -48,6 +74,7 @@ const App = () => {
             filterText={filterText}
             customText={customText}
             fonts={fonts}
+            numberOfFonts={numberOfFonts}
           />
         </div>
       </main>
