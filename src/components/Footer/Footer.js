@@ -1,14 +1,11 @@
 import React from 'react'
+import './Footer.css'
 
 const Footer = () => {
-  const footerStyle = {
-    textAlign: 'center',
-  }
-
   return (
     <footer>
-      <p style={footerStyle}>
-        coded by Marco Burman | 2020 |{' '}
+      <p>
+        coded by Marco Burman | 2021 |{' '}
         <a href="https://github.com/Cursea">portfolio project</a>
       </p>
     </footer>
