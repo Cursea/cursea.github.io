@@ -12,6 +12,7 @@ const App = () => {
   const [fonts, setFonts] = useState([])
   const [atBottom, setAtBottom] = useState(false)
   const [numberOfFonts, setNumberOfFonts] = useState(16)
+  const [darkMode, setDarkMode] = useState(true)
 
   useEffect(() => {
     const fetchData = async () => {
@@ -67,6 +68,7 @@ const App = () => {
           setFilter={handleFilterChange}
           customText={customText}
           setCustomText={handleCustomTextChange}
+
         />
 
         <div id="content">
