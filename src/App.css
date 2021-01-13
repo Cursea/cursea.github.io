@@ -5,11 +5,6 @@ body {
   color: cornsilk;
 }
 
-body.dark {
-  background-color: #191a1b;
-  color: cornsilk;
-}
-
 body.light {
   background-color: cornsilk;
   color: #191a1b;

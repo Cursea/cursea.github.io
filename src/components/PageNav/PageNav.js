@@ -3,7 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faList, faRedo } from '@fortawesome/free-solid-svg-icons'
 import './PageNav.css'
 
-const PageNav = ({ filterText, setFilter, customText, setCustomText }) => {
+const PageNav = ({
+  filterText,
+  setFilter,
+  customText,
+  setCustomText,
+  darkMode,
+  setDarkMode,
+}) => {
   return (
     <nav id="major-nav">
       <label htmlFor="search">Search fonts</label>
@@ -31,9 +38,14 @@ const PageNav = ({ filterText, setFilter, customText, setCustomText }) => {
         <option value="30px">30px</option>
         <option value="32px">32px</option>
       </select>
-      <div id="darkmode">
-        <button className="darkmode-button" id="dark" type="button"></button>
-        <button className="darkmode-button" id="light" type="button"></button>
+      <div id="darkmode-setting">
+        <label htmlFor="darkmode-checkbox" id="darkmode-label"></label>
+        <input
+          type="checkbox"
+          id="darkmode-checkbox"
+          value={darkMode}
+          onClick={setDarkMode}
+        ></input>
       </div>
       <button id="list-mode" className="fas fa-list" type="button">
         <FontAwesomeIcon icon={faList} />

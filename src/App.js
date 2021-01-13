@@ -34,6 +34,11 @@ const App = () => {
     setCustomText(event.target.value)
   }
 
+  const handleDarkModeChange = () => {
+    document.body.classList.toggle('light')
+    setDarkMode(!darkMode)
+  }
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
@@ -65,10 +70,11 @@ const App = () => {
       <main>
         <PageNav
           filterText={filterText}
-          setFilter={handleFilterChange}
           customText={customText}
+          setFilter={handleFilterChange}
           setCustomText={handleCustomTextChange}
-
+          darkMode={darkMode}
+          setDarkMode={handleDarkModeChange}
         />
 
         <div id="content">

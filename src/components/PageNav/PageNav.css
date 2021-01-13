@@ -23,29 +23,26 @@ label {
   width: 7%;
 }
 
-#darkmode {
+#darkmode-setting {
   margin: 0 4% 0 1%;
+}
+
+#darkmode-label {
+  display: inline;
+  padding: 6px;
+  background-color: hotpink;
+  border-color: gray;
 }
 
 #font-sizes,
 #list-mode,
-.darkmode-button,
+#darkmode-label,
 #reset {
   cursor: pointer;
 }
 
-.darkmode-button {
-  padding: 8px;
-  border-color: gray;
-  border-radius: 50%;
-}
-
-#light {
-  background-color: whitesmoke;
-}
-
-#dark {
-  background-color: black;
+#darkmode-checkbox {
+  display: none;
 }
 
 #list-mode,
