@@ -1,6 +1,11 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faList, faRedo } from '@fortawesome/free-solid-svg-icons'
+import {
+  faList,
+  faRedo,
+  faMoon,
+  faSun,
+} from '@fortawesome/free-solid-svg-icons'
 import './PageNav.css'
 
 const PageNav = ({
@@ -11,6 +16,8 @@ const PageNav = ({
   darkMode,
   setDarkMode,
 }) => {
+  let icon = darkMode ? faSun : faMoon
+
   return (
     <nav id="major-nav">
       <label htmlFor="search">Search fonts</label>
@@ -39,7 +46,9 @@ const PageNav = ({
         <option value="32px">32px</option>
       </select>
       <div id="darkmode-setting">
-        <label htmlFor="darkmode-checkbox" id="darkmode-label"></label>
+        <label htmlFor="darkmode-checkbox" id="darkmode-label">
+          <FontAwesomeIcon icon={icon} />
+        </label>
         <input
           type="checkbox"
           id="darkmode-checkbox"

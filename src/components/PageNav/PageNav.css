@@ -9,9 +9,14 @@ label {
   position: sticky;
   top: 0;
   margin: auto 0 40px;
-  background: #191a1b;
-  border: 2px solid grey;
   border-radius: 2rem;
+  background-color: #191a1b;
+  border: 1px solid #3b3f41;
+}
+
+.light #major-nav {
+  background-color: #fff;
+  border: 1px solid #dadce0;
 }
 
 #search,
@@ -24,14 +29,12 @@ label {
 }
 
 #darkmode-setting {
-  margin: 0 4% 0 1%;
+  margin: auto;
 }
 
 #darkmode-label {
   display: inline;
   padding: 6px;
-  background-color: hotpink;
-  border-color: gray;
 }
 
 #font-sizes,
