@@ -12,7 +12,9 @@ const App = () => {
   const [fonts, setFonts] = useState([])
   const [atBottom, setAtBottom] = useState(false)
   const [numberOfFonts, setNumberOfFonts] = useState(16)
-  const [darkMode, setDarkMode] = useState(true)
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem('darkMode') || true
+  )
 
   useEffect(() => {
     const fetchData = async () => {
@@ -25,6 +27,10 @@ const App = () => {
     }
     fetchData()
   }, [])
+
+  useEffect(() => {
+    localStorage.setItem('darkMode', darkMode)
+  }, [darkMode])
 
   const handleFilterChange = (event) => {
     setFilterText(event.target.value)
