@@ -47,7 +47,8 @@ Tier 2 realizes this project as a fully developed front-end app. A back-end is n
 **Extras (Not Required)**
 
 - [ ] Make your design fully responsive (small/large/portrait/landscape, etc.)
-- [ ] Implement the light/dark mode toggle buttons
+- [x] Implement the light/dark mode toggle buttons
+- [ ] Save dark mode state to local storage
 - [ ] Implement the change display icon so you can flip between a grid layout and a list layout for the font cards
 - [ ] Make the 'add-font' icon add the font to a list (localHost, Cache API, etc) for front-end persistence; users can then delete the font from the list
 
