@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './App.css'
+import localStorageService from './localStorageService'
 import FontCards from './components/FontCard/FontCard'
 import Footer from './components/Footer/Footer'
 import HeaderNav from './components/HeaderNav/HeaderNav'
@@ -13,8 +14,12 @@ const App = () => {
   const [atBottom, setAtBottom] = useState(false)
   const [numberOfFonts, setNumberOfFonts] = useState(16)
   const [darkMode, setDarkMode] = useState(
-    localStorage.getItem('darkMode') || true
+    localStorageService.get('darkMode') === null
+      ? true
+      : localStorageService.get('darkMode')
   )
+
+  console.log(localStorage.getItem('darkMode'))
 
   useEffect(() => {
     const fetchData = async () => {
@@ -40,8 +45,14 @@ const App = () => {
     setCustomText(event.target.value)
   }
 
+  const lightsOn = (darkMode) => {
+    return darkMode
+      ? document.body.classList.remove('light')
+      : document.body.classList.add('light')
+  }
+
   const handleDarkModeChange = () => {
-    document.body.classList.toggle('light')
+    lightsOn(darkMode)
     setDarkMode(!darkMode)
   }
 
