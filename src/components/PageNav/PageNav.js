@@ -29,6 +29,7 @@ const PageNav = ({
         value={filterText}
         onChange={setFilter}
       />
+      <div class="divider"></div>
       <label htmlFor="custom-text">Enter text</label>
       <input
         type="text"
@@ -38,6 +39,7 @@ const PageNav = ({
         value={customText}
         onChange={setCustomText}
       />
+      <div class="divider"></div>
       <label htmlFor="font-sizes"></label>
       <select id="font-sizes">
         <option value="26px">26px</option>
@@ -45,6 +47,7 @@ const PageNav = ({
         <option value="30px">30px</option>
         <option value="32px">32px</option>
       </select>
+      <div class="divider"></div>
       <div id="darkmode-setting">
         <label htmlFor="darkmode-checkbox" id="darkmode-label">
           <FontAwesomeIcon icon={icon} />
