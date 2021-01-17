@@ -5,6 +5,10 @@
   border-radius: 8px;
 }
 
+.light .card {
+  border-color: #dadce0;
+}
+
 .font-info {
   margin: 8px 16px 8px;
 }

@@ -18,6 +18,10 @@ li {
   margin-bottom: 1rem;
 }
 
+.light #header-nav {
+  border-bottom-color: #dadce0;
+}
+
 #header-nav > div {
   margin: 0 5%;
 }
