@@ -8,6 +8,22 @@ body {
   font-size: 1em;
 }
 
+body::-webkit-scrollbar {
+  background-color: #212324;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #464b4d;
+}
+
+body.light::-webkit-scrollbar {
+  background-color: #f1f1f1;
+}
+
+body.light::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
