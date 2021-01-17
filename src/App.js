@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import './App.css'
 import localStorageService from './localStorageService'
 import FontCards from './components/FontCard/FontCard'
@@ -31,9 +31,16 @@ const App = () => {
     fetchData()
   }, [])
 
+  const lightsOn = useCallback(() => {
+    return darkMode
+      ? document.body.classList.remove('light')
+      : document.body.classList.add('light')
+  }, [darkMode])
+
   useEffect(() => {
     localStorage.setItem('darkMode', darkMode)
-  }, [darkMode])
+    lightsOn()
+  }, [darkMode, lightsOn])
 
   const handleFilterChange = (event) => {
     setFilterText(event.target.value)
@@ -43,15 +50,9 @@ const App = () => {
     setCustomText(event.target.value)
   }
 
-  const lightsOn = (darkMode) => {
-    return darkMode
-      ? document.body.classList.add('light')
-      : document.body.classList.remove('light')
-  }
-
   const handleDarkModeChange = () => {
-    lightsOn(darkMode)
     setDarkMode(!darkMode)
+    lightsOn()
   }
 
   useEffect(() => {

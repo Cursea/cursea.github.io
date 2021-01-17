@@ -9,4 +9,6 @@ const set = (key, value) => {
   localStorage.setItem(stringified)
 }
 
-export default { get, set }
+const updater = { get, set }
+
+export default updater
