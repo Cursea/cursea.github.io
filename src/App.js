@@ -19,8 +19,6 @@ const App = () => {
       : localStorageService.get('darkMode')
   )
 
-  console.log(localStorage.getItem('darkMode'))
-
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
@@ -47,8 +45,8 @@ const App = () => {
 
   const lightsOn = (darkMode) => {
     return darkMode
-      ? document.body.classList.remove('light')
-      : document.body.classList.add('light')
+      ? document.body.classList.add('light')
+      : document.body.classList.remove('light')
   }
 
   const handleDarkModeChange = () => {
