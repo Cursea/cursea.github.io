@@ -42,17 +42,17 @@ const App = () => {
     lightsOn()
   }, [darkMode, lightsOn])
 
+  const handleDarkModeChange = () => {
+    setDarkMode(!darkMode)
+    lightsOn()
+  }
+
   const handleFilterChange = (event) => {
     setFilterText(event.target.value)
   }
 
   const handleCustomTextChange = (event) => {
     setCustomText(event.target.value)
-  }
-
-  const handleDarkModeChange = () => {
-    setDarkMode(!darkMode)
-    lightsOn()
   }
 
   useEffect(() => {
