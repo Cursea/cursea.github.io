@@ -1,7 +1,13 @@
 import React from 'react'
 import './FontCard.css'
 
-const FontCards = ({ filterText, customText, fonts, numberOfFonts }) => {
+const FontCards = ({
+  filterText,
+  customText,
+  fonts,
+  numberOfFonts,
+  fontSize,
+}) => {
   const filteredCards = fonts.filter((font) =>
     font.family.toLocaleLowerCase().includes(filterText)
   )
@@ -21,7 +27,10 @@ const FontCards = ({ filterText, customText, fonts, numberOfFonts }) => {
         )}&display=swap`}
         )
       </style>
-      <p className="sample-text" style={{ fontFamily: card.family }}>
+      <p
+        className="sample-text"
+        style={{ fontFamily: card.family, fontSize: fontSize }}
+      >
         {!customText
           ? `“If cats looked like frogs we'd realize what nasty, cruel little bastards they are.
           Style. That's what people remember.”

@@ -11,6 +11,7 @@ const App = () => {
   const [filterText, setFilterText] = useState('')
   const [customText, setCustomText] = useState('')
   const [fonts, setFonts] = useState([])
+  const [fontSize, setFontSize] = useState('16px')
   const [atBottom, setAtBottom] = useState(false)
   const [numberOfFonts, setNumberOfFonts] = useState(16)
   const [darkMode, setDarkMode] = useState(
@@ -55,6 +56,10 @@ const App = () => {
     setCustomText(event.target.value)
   }
 
+  const handleFontSizeChange = (event) => {
+    setFontSize(event.target.value)
+  }
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
@@ -91,6 +96,7 @@ const App = () => {
           setCustomText={handleCustomTextChange}
           darkMode={darkMode}
           setDarkMode={handleDarkModeChange}
+          setFontSize={handleFontSizeChange}
         />
 
         <div id="content">
@@ -99,6 +105,7 @@ const App = () => {
             customText={customText}
             fonts={fonts}
             numberOfFonts={numberOfFonts}
+            fontSize={fontSize}
           />
         </div>
       </main>

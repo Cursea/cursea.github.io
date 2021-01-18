@@ -15,6 +15,7 @@ const PageNav = ({
   setCustomText,
   darkMode,
   setDarkMode,
+  setFontSize,
 }) => {
   let icon = darkMode ? faSun : faMoon
 
@@ -41,11 +42,11 @@ const PageNav = ({
       />
       <div className="divider"></div>
       <label htmlFor="font-sizes"></label>
-      <select id="font-sizes">
-        <option value="26px">26px</option>
-        <option value="28px">28px</option>
-        <option value="30px">30px</option>
-        <option value="32px">32px</option>
+      <select id="font-sizes" onChange={setFontSize}>
+        <option value="16px">16px</option>
+        <option value="24px">24px</option>
+        <option value="33px">32px</option>
+        <option value="40px">40px</option>
       </select>
       <div className="divider"></div>
       <div id="darkmode-setting">
