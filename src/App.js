@@ -108,6 +108,7 @@ const App = () => {
             fontSize={fontSize}
           />
         </div>
+        <button id="return-to-the-top">↑</button>
       </main>
 
       <Footer />
