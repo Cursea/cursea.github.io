@@ -34,7 +34,7 @@ Tier 2 realizes this project as a fully developed front-end app. A back-end is n
 *Functionality*
 - [x] Text typed into the custom text (type something) box should immediately change the sample text in each font card
 - [x] The sample text should return to the default sample if the input box (type something) no longer has any input
-- [ ] Font size chooser should have at least four sizes and should immediately change the sample text font size in each font card
+- [x] Font size chooser should have at least four sizes and should immediately change the sample text font size in each font card
 - [ ] Implement the clickable 'reset' icon on the far right of the major navigation; it should reset the page as if the page were reloaded *(do not actually reset the page)*
 - [x] On load, the page should display fonts sorted by current popularity/trending, as returned by the Google Fonts Developer API *(see below)*
 - [x] The search feature should be fully functional and should display matching fonts (it's up to you if you want to do this via a 'submit' or through onchange)
@@ -48,7 +48,7 @@ Tier 2 realizes this project as a fully developed front-end app. A back-end is n
 
 - [ ] Make your design fully responsive (small/large/portrait/landscape, etc.)
 - [x] Implement the light/dark mode toggle buttons
-- [ ] Save dark mode state to local storage
+- [x] Save dark mode state to local storage
 - [ ] Implement the change display icon so you can flip between a grid layout and a list layout for the font cards
 - [ ] Make the 'add-font' icon add the font to a list (localHost, Cache API, etc) for front-end persistence; users can then delete the font from the list
 
