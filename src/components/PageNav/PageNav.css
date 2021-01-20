@@ -29,9 +29,30 @@ svg#searchIcon {
 }
 
 #search,
+#custom-text,
+#font-sizes,
+#list-mode,
+#reset {
+  margin: auto;
+  color: #c3bcb2;
+  background-color: #191a1b;
+  border-color: transparent;
+}
+
+.light #search,
+.light #custom-text,
+.light #font-sizes,
+.light #list-mode,
+.light #reset {
+  color: inherit;
+  background-color: transparent;
+}
+
+#search,
 #custom-text {
   height: 36px;
   width: 30%;
+  margin-right: 10px;
   font-size: 16px;
 }
 
@@ -61,26 +82,6 @@ svg#searchIcon {
 
 #darkmode-checkbox {
   display: none;
-}
-
-#search,
-#custom-text,
-#font-sizes,
-#list-mode,
-#reset {
-  margin: auto;
-  color: #c3bcb2;
-  background-color: #191a1b;
-  border-color: transparent;
-}
-
-.light #search,
-.light #custom-text,
-.light #font-sizes,
-.light #list-mode,
-.light #reset {
-  color: inherit;
-  background-color: transparent;
 }
 
 #search::placeholder,
