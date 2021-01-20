@@ -14,6 +14,7 @@ const App = () => {
   const [customText, setCustomText] = useState('')
   const [fonts, setFonts] = useState([])
   const [fontSize, setFontSize] = useState('16px')
+  const [atTop, setAtTop] = useState(true)
   const [atBottom, setAtBottom] = useState(false)
   const [numberOfFonts, setNumberOfFonts] = useState(16)
   const [darkMode, setDarkMode] = useState(
@@ -68,6 +69,8 @@ const App = () => {
   }, [])
 
   const handleScroll = () => {
+    document.documentElement.scrollTop !== 0 ? setAtTop(false) : setAtTop(true)
+
     if (
       window.innerHeight + document.documentElement.scrollTop + 2 >=
       document.documentElement.offsetHeight
@@ -110,7 +113,12 @@ const App = () => {
             fontSize={fontSize}
           />
         </div>
-        <button id="return-to-the-top" type="button">
+        <button
+          id="return-to-the-top"
+          type="button"
+          style={{ display: atTop ? 'none' : 'block' }}
+          onClick={() => (document.documentElement.scrollTop = 0)}
+        >
           <FontAwesomeIcon icon={faArrowCircleUp} />
         </button>
       </main>

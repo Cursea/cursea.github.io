@@ -22,12 +22,26 @@ main {
 }
 
 #return-to-the-top {
+  display: block;
   position: fixed;
   bottom: 64px;
   right: 40px;
-  height: 100px;
-  width: 100px;
+  height: 56px;
+  width: 56px;
   z-index: 2;
-  border: 10px solid hotpink;
+  background: none;
+  border: none;
   border-radius: 50%;
+  box-shadow: 0px 0px 6px 1px #7a7373;
+  outline: none;
+}
+
+#return-to-the-top > * {
+  height: 100%;
+  width: 100%;
+  color: cornsilk;
+}
+
+.light #return-to-the-top > * {
+  color: #383a3d;
 }
