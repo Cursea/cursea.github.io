@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
+  faSearch,
   faList,
   faRedo,
   faMoon,
@@ -21,6 +22,7 @@ const PageNav = ({
 
   return (
     <nav id="major-nav">
+      <FontAwesomeIcon icon={faSearch} id="searchIcon" />
       <label htmlFor="search">Search fonts</label>
       <input
         type="search"
