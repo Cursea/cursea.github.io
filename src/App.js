@@ -5,6 +5,8 @@ import FontCards from './components/FontCard/FontCard'
 import Footer from './components/Footer/Footer'
 import HeaderNav from './components/HeaderNav/HeaderNav'
 import PageNav from './components/PageNav/PageNav'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowCircleUp } from '@fortawesome/free-solid-svg-icons'
 require('dotenv').config()
 
 const App = () => {
@@ -108,7 +110,9 @@ const App = () => {
             fontSize={fontSize}
           />
         </div>
-        <button id="return-to-the-top">↑</button>
+        <button id="return-to-the-top" type="button">
+          <FontAwesomeIcon icon={faArrowCircleUp} />
+        </button>
       </main>
 
       <Footer />

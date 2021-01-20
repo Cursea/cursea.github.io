@@ -52,12 +52,6 @@ label {
 #darkmode-label {
   display: inline;
   padding: 6px;
-}
-
-#font-sizes,
-#list-mode,
-#darkmode-label,
-#reset {
   cursor: pointer;
 }
 
