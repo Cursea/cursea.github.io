@@ -22,6 +22,13 @@ const App = () => {
       ? true
       : localStorageService.get('darkMode')
   )
+  const [categories, setCategories] = useState([
+    { Serif: true },
+    { SansSerif: true },
+    { Display: true },
+    { Handwriting: true },
+    { Monospace: true },
+  ])
 
   useEffect(() => {
     const fetchData = async () => {
@@ -63,6 +70,8 @@ const App = () => {
     setFontSize(event.target.value)
   }
 
+  const handleCategoryChange = (event) => {}
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
@@ -102,6 +111,7 @@ const App = () => {
           darkMode={darkMode}
           setDarkMode={handleDarkModeChange}
           setFontSize={handleFontSizeChange}
+          setCategories={handleCategoryChange}
         />
 
         <div id="content">
@@ -109,6 +119,7 @@ const App = () => {
             filterText={filterText}
             customText={customText}
             fonts={fonts}
+            categories={categories}
             numberOfFonts={numberOfFonts}
             fontSize={fontSize}
           />

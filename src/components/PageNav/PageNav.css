@@ -9,7 +9,7 @@ label {
   position: sticky;
   top: 0;
   height: 54px;
-  margin: auto 0 40px;
+  margin: auto 0 20px;
   border-radius: 2rem;
   background-color: #191a1b;
   border: 1px solid #3b3f41;
@@ -92,4 +92,13 @@ svg#searchIcon {
 .light #search::placeholder,
 .light #custom-text::placeholder {
   color: #3c4043;
+}
+
+#filter-wrapper {
+  margin: auto 0 30px;
+}
+
+#filter-wrapper label {
+  display: inline;
+  cursor: pointer;
 }
