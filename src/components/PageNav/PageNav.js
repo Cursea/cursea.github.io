@@ -17,9 +17,11 @@ const PageNav = ({
   darkMode,
   setDarkMode,
   setFontSize,
+  categories,
   setCategories,
 }) => {
   let icon = darkMode ? faSun : faMoon
+  let selectedCategories = categories.map((category) => category)
 
   return (
     <>

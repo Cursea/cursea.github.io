@@ -111,6 +111,7 @@ const App = () => {
           darkMode={darkMode}
           setDarkMode={handleDarkModeChange}
           setFontSize={handleFontSizeChange}
+          categories={categories}
           setCategories={handleCategoryChange}
         />
 
