@@ -6,7 +6,9 @@ const Footer = () => {
     <footer>
       <p>
         coded by Marco Burman | 2021 |{' '}
-        <a href="https://github.com/Cursea" id="portfolio">portfolio project</a>
+        <a href="https://github.com/Cursea/cursea.github.io" id="portfolio">
+          portfolio project
+        </a>
       </p>
     </footer>
   )
