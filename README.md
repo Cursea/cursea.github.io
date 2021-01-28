@@ -1,8 +1,13 @@
 # Font of all Fonts
 
 'Font of all Fonts' is a portfolio project written in React with the aim of cloning [Google Fonts](https://fonts.google.com/).
+\
+\
+This app is currently hosted via Github pages, so go check it out! https://cursea.github.io/
 
-This started out as a vanilla JS clone (['Favourite-Fonts'](https://github.com/Cursea/Favourite-Fonts)) before I chose to convert what I had to React, using create-react-app to kick it off.
+![App](images/font_of_all_fonts.png)
+
+This started out as a vanilla JS clone before I chose to convert what I had to React, using create-react-app to kick it off.
 
 See [ProjectRequirements.md](ProjectRequirements.md) for progress.
 
@@ -17,3 +22,4 @@ Running locally requires you provide *your own* [google api key](https://develop
 5. Add a file to the top level folder, and name it `.env`. Inside, paste in your google api key in the format
 `REACT_APP_API_KEY = 'YOUR KEY HERE'`
 6. run `npm start`
+7. The app should open up a new tab in your browser, pointing to http://localhost:3000/
