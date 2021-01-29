@@ -21,7 +21,7 @@ Tier 2 realizes this project as a fully developed front-end app. A back-end is n
 - [x] Nav with Major navigation / page-manipulation *(search, custom text, font-size, dark/light mode, grid/list mode, and reset)*
 - [x] Main section for the font cards
 - [x] Font cards which display the Font Name, the sample text, and an add button (the font creator is **not** available via the api, so it is not required in tiers 2 or 3)
-- [ ] Back-to-top button that allows users to click and scroll back up to the top *(there could be up to 959 fonts displayed, so you need this!)*
+- [x] Back-to-top button that allows users to click and scroll back up to the top *(there could be up to 959 fonts displayed, so you need this!)*
 - [x] Footer section with your developer information
 
 *Style*
@@ -29,7 +29,7 @@ Tier 2 realizes this project as a fully developed front-end app. A back-end is n
 - [x] Buttons/links should be evident (make sure the cursor changes, etc.) 
 - [x] Learn how to import font awesome icons into React!
 - [ ] Implement a way to handle overflow from sample text in the font cards, as the font size is adjustable
-- [ ] Make the whole page content a CSS Grid; make PageNav sticky (keep on top when page scrolls down) and make sure the footer is always at the bottom
+- [x] Make the whole page content a CSS Grid; make PageNav sticky (keep on top when page scrolls down) and make sure the footer is always at the bottom
 
 *Functionality*
 - [x] Text typed into the custom text (type something) box should immediately change the sample text in each font card
@@ -41,8 +41,8 @@ Tier 2 realizes this project as a fully developed front-end app. A back-end is n
 - [ ] When the search input is cleared (via reset button or manually), the fonts should automaticaly display sorted by poplarity again
 
 *Other*
-- [ ] Your repo needs to have a robust README.md
-- [ ] Make sure that there are no errors in the developer console before submitting
+- [x] Your repo needs to have a robust README.md
+- [ ] Make sure that there are no errors in the developer console
 
 **Extras (Not Required)**
 
