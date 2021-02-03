@@ -25,7 +25,7 @@ const PageNav = ({
 
   return (
     <>
-      <nav id="major-nav">
+      <div id="major-nav">
         <FontAwesomeIcon icon={faSearch} id="searchIcon" />
         <label htmlFor="search">Search fonts</label>
         <input
@@ -72,7 +72,7 @@ const PageNav = ({
         <button id="reset" className="fas fa-redo" type="button">
           <FontAwesomeIcon icon={faRedo} />
         </button>
-      </nav>
+      </div>
       <div id="filter-wrapper">
         <label htmlFor="serif">
           <input type="checkbox" id="serif"></input>
